@@ -18,7 +18,7 @@
 ### Install Terraform version 0.12.26
 
 ``` sh
-sudo yum install wget unzip -y
+sudo yum install wget unzip git -y
  wget https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
  sudo unzip terraform_0.12.26_linux_amd64.zip -d /usr/local/bin/
 # Export terraform binary path temporally
