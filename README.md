@@ -41,6 +41,25 @@ export PATH=$PATH:/usr/local/bin
  source ~/.bashrc   
 
 ```
+
+### install AWSCLI
+```
+ sudo yum update -y
+ sudo yum install unzip wget -y
+ sudo curl https://s3.amazonaws.com/aws-cli/awscli-bundle.zip -o awscli-bundle.zip
+ sudo yum install unzip python -y
+ sudo unzip awscli-bundle.zip
+ sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+ ```
+
+### Install kubectl
+```
+ sudo curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+ sudo chmod +x ./kubectl
+ sudo mv ./kubectl /usr/local/bin/kubectl
+```
+
+
 #### Clone terraform scripts
 ``` sh
 $ git clone https://github.com/benadaba/terraform-eks
